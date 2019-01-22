@@ -1,0 +1,76 @@
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+	font-weight:600;
+	padding: 30px;
+	color: #4CAF50;
+}
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content {
+
+	padding: 0 18px;
+	box-shadow: 0px 0px 3px #848484;
+}
+
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-group input {
+	height: 42px;
+	border-radius: 5px;
+	
+	font-size: 18px;
+	padding-left: 54px;
+}
+
+.fa-user {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	padding: 130px 35px;
+	color: #555e60;
+}
+
+.fa-envelope {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	padding: 196px 35px;
+	color: #555e60;
+}
+
+.fa-key {
+	position: absolute;
+	left: 0;
+	top: 70px;
+	padding: 195px 35px;
+	color: #555e60;
+}
+
+button {
+	margin: 5px 0 10px;
+}
+
+button:last-of-type {
+	margin-bottom: 25px;
+}
+
+
+
+
+
