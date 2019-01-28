@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+<form name="translate" onsubmit="return word()">
+<p> Please enter a word or a sentence to translate. </p> <br>
+<input type="text" name="input"><br><br>
+<input type="submit" ><br>
+<p id="demo"></p>
+</form>
+<p>Select a language that you want to translate.</p>
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+	function googleTranslateElementInit(){
+		new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');
+	}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+<script>
+	function word(){
+		var x=document.translate.input.value;
+		document.getElementById("demo").innerHTML=x;
+		return false;
+	}
+	</script>
+
+<p>You can translate the word or sentence by selecting a language in the select box.</p>
+</body>
+</html>
