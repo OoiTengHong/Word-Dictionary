@@ -1,32 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<body>
-<form name="translate" onsubmit="return word()">
+
+<head>
+	<title>Google Translate </title>
+	
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Translate.css">
+  </head>
+  
+  <body>
+   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   	<div class="container">
+   	<a class="navbar-brand" href="#">Word Dictionary</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="6.Word Dictionary.php"><i class="far fa-question-circle"></i> Quiz</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="translate.html"><i class="fas fa-language"></i> Google Translate <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="2.Sign In.php"><i class="fas fa-user"></i> Sign In</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="4.Sign Up.php"><i class="fas fa-user-plus"></i> Sign Up</a>
+	      </li>
+	    </ul>
+	  </div>
+   	</div>
+	  
+	</nav>
+<br><br><br>
+
+<center><h2><img src="translate.png" width="62px" height="62px">Google Translate</h2><br>
+
+<form >
 <p> Please enter a word or a sentence to translate. </p> <br>
-<input type="text" name="input"><br><br>
-<input type="submit" ><br>
-<p id="demo"></p>
-</form>
+<input type="text" onkeyup="showHint(this.value)"><br><br>
 <p>Select a language that you want to translate.</p>
-<div id="google_translate_element"></div>
+<div id="google_translate_element"></div><br>
+<p><span id="txtHint"></span></p>
+</form>
+</center>
 
 <script type="text/javascript">
-	function googleTranslateElementInit(){
-		new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');
-	}
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
 </script>
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 
 <script>
-	function word(){
-		var x=document.translate.input.value;
-		document.getElementById("demo").innerHTML=x;
-		return false;
+function showHint(str){
+	if(str.length==0){
+		document.getElementById("txtHint").innerHTML="";
+		return;
 	}
-	</script>
-
-<p>You can translate the word or sentence by selecting a language in the select box.</p>
+	else{
+		var xmlhttp=new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function(){
+			if(this.readyState==4 && this.status==200){
+				document.getElementById("txtHint").innerHTML=this.responseText;
+				}
+			}
+			xmlhttp.open("GET","getword.php?q="+str,true);
+			xmlhttp.send();
+		}
+	}
+</script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
