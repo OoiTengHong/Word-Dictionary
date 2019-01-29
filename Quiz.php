@@ -32,8 +32,7 @@
                 width: 200px;
                 height: 110px;
                 background: white;
-                border: solid 1px;
-				
+                border: solid 1px;				
             }
 			
 	#dropzone2 {
@@ -44,8 +43,18 @@
                 width: 200px;
                 height: 110px;
                 background: white;
-                border: solid 1px;
-				
+                border: solid 1px;	
+            }
+			
+	#dropzone3 {
+                position:relative;
+				top: 1px;
+				left: 200px;
+				z-index: -1;
+                width: 200px;
+                height: 110px;
+                background: white;
+                border: solid 1px;	
             }
 			
 	#align{
@@ -140,14 +149,14 @@
 	<br>
 	<br>
 
-	<div id="font">Quiz Time !!!</div>
+	<div id="font">Antonym Quiz Time !!!</div>
 	<hr>
 	
-	<div id="ans">Note: There will be two answers for you to choose from. Drag the correct answer into the white box given. If the answer is correct, the box will turn green. Otherwise, the box will remain white.</div>
+	<div id="ans">Note: There will be three answers for you to choose from. Drag the correct answer into the white box given. If the answer is correct, the box will turn green. Otherwise, the box will remain white.</div>
 	<br>
 	<div id="align2">
 	
-    <div id="align">1. Angry</div>
+    <div id="align">1. Brave</div>
 	
     <div id="dropzone"></div>
 	
@@ -156,8 +165,16 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<br>
 	<br>
-	<div id="align">2. Happy</div>
+	<div id="align">2. Marvelous</div>
 	<div id="dropzone2"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<br>
+	<br>
+	<div id="align">3. Truth</div>
+	<div id="dropzone3"></div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
@@ -166,8 +183,9 @@
 	</div>
 	
 	<div id="pans">
-	<p data-ans="Happy" class="winston" id="happy">Happy</p>
-	<p data-ans="Sad" class="winston" id="sad">Sad</p>
+	<p data-ans="Happy" class="winston" id="happy">Terrible</p>
+	<p data-ans="Sad" class="winston" id="sad">Cowardly</p>
+	<p data-ans="Boring" class="winston" id="boring">Propaganda</p>
 	</div>
 	
 	
@@ -195,6 +213,25 @@
 		$("#dropzone2").droppable(
 		{
 			accept: "#happy", zIndex: 2,
+			drop: function(event,ui)
+			{
+				$(this).css('background','green');
+			},
+			over: function(event, ui) 
+			{
+				$(this).css('background', 'orange');
+			},
+			out: function(event, ui) 
+			{
+				$(this).css('background', 'white');
+			}
+		});
+	</script>
+	<script>
+		$("#boring").draggable();
+		$("#dropzone3").droppable(
+		{
+			accept: "#boring", zIndex: 2,
 			drop: function(event,ui)
 			{
 				$(this).css('background','green');
