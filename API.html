@@ -11,7 +11,8 @@
 		body {
 			font-family: "Roboto", sans-serif;
 			background-size: cover;
-			background-color: grey;
+			background-color: black;
+			color: white;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="5.style.css">
