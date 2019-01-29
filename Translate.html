@@ -55,17 +55,32 @@
 	  
 	</nav>
 
+	<div class="container">
+		<center>
+		<div class="form-group">
+			<h2><img src="translate.png" width="62px" height="62px">Google Translate</h2>
+		</div>
 
-<center><h2><img src="translate.png" width="62px" height="62px">Google Translate</h2><br>
+		<form>
 
-<form >
-<p> Please enter a word or a sentence to translate. </p> <br>
-<input type="text" onkeyup="showHint(this.value)"><br><br>
-<p>Select a language that you want to translate.</p>
-<div id="google_translate_element"></div><br>
-<p><span id="txtHint"></span></p>
-</form>
-</center>
+			<div class="form-group">
+				<p> Please enter a word or a sentence to translate. </p><br>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" onkeyup="showHint(this.value)"><br>
+			</div>
+			<div class="form-group">
+				<p>Select a language that you want to translate.</p><br>
+			</div>
+			<div class="form-group" id="google_translate_element"></div><br>
+			<div class="form-group">
+				<p><span id="txtHint"></span></p>
+			</div>
+			
+		</form>
+		</center>
+	</div>
+	
 
 <script type="text/javascript">
 function googleTranslateElementInit() {

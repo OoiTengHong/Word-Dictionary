@@ -1,11 +1,8 @@
 body {
-	background-color:#D3D3D3;
-}
+	background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-form {
-	background-color:#B0C4DE;
-	display:inline-block;  
-	padding: 20px;
 }
 
 p {
@@ -18,7 +15,7 @@ h2 {
 	font-family: "Times New Roman", Times, serif; 
 	font-size:35pt; 
 	font-weight:bold;
-	color:#8B4513;
+	color: blue;
 	margin-top: 150px;
 }
 

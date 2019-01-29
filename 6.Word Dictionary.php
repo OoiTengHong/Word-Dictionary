@@ -18,9 +18,13 @@
 		body {
 			font-family: "Roboto", sans-serif;
 			background-size: cover;
+			background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 		}
 		.table {
-			margin-top: 100px;
+			margin-top: 110px;
 		}
 	</style>
 	
@@ -107,7 +111,7 @@
 						<td><?php echo $row['synonym'] ?></td>
 						<td><?php echo $row['definition'] ?></td>
 						<td>
-							<a href="1.Thesaurus Online Learning Tool.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
+							<a href="6.Word Dictionary.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
 							<a href="5.process.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
 						</td>
 					</tr>
@@ -170,7 +174,7 @@
 			<div class="form-group">
 				<button type="submit" name="search" class="btn btn-info">Search</button>
 			</div>
-				
+			<br><br><br>
 	</form>
 
 	</div>
