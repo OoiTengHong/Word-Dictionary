@@ -14,7 +14,7 @@
   <body>
    	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
    	<div class="container">
-   	<a class="navbar-brand" href="#">Word Dictionary</a>
+   	<a class="navbar-brand" href="API.html">Word Dictionary</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -25,12 +25,18 @@
 	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
+<<<<<<< HEAD
 	        <a class="nav-link" href="6.Word Dictionary.php"><i class="fas fa-book"></i> Thesaurus</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="7.Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
 	      </li>
 	      <li class="nav-item">
+=======
+	        <a class="nav-link" href="Quiz1.php"><i class="far fa-question-circle"></i> Quiz</a>
+	      </li>
+	      <li class="nav-item">
+>>>>>>> 4b2ae66322a5611cb6e8f1310c48b9ecae295c93
 	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
 	      </li>
 	    </ul>
