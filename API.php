@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -23,42 +20,44 @@
 <form action="API.php" method="post">
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-   	<div class="container">
-   	<a class="navbar-brand" href="API.html">Word Dictionary</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+    <div class="container">
+    <a class="navbar-brand" href="#">Word Dictionary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
-	      </li>
-	    </ul>
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="2.Sign In.php"><i class="fas fa-user"></i> Sign In</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="4.Sign Up.php"><i class="fas fa-user-plus"></i> Sign Up</a>
-	      </li>
-	    </ul>
-	  </div>
-   	</div>
-	  
-	</nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="6.Word Dictionary.php"><i class="fas fa-book"></i> Thesaurus</a>
+        </li>
+        
+        <li class="nav-item">
+
+          <a class="nav-link" href="Quiz1.php"><i class="far fa-question-circle"></i> Quiz</a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="2.Sign In.php"><i class="fas fa-user"></i> Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="4.Sign Up.php"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    
+  </nav>
+
 Enter the word: <input type="text" name="word">
 <br>
 <br>
@@ -66,7 +65,6 @@ Enter the word: <input type="text" name="word">
 </body>
 </form>
 </html>
->>>>>>> 4b2ae66322a5611cb6e8f1310c48b9ecae295c93
  <?php
  $myword=$_POST["word"];
  function grab_xml_definition ($word, $ref, $key) {
