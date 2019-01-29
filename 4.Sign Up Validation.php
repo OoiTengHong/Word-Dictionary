@@ -17,7 +17,7 @@
 		// encrypt password before storing in database
 		$password = md5($password); 
 		$mysqli->query("INSERT INTO login (username, email, password) VALUES ('$username', '$email', '$password')") or die($mysqli->error);
-		 header("location: 1.Home Page.php");
+		 header("location: 1.HomePage.php");
 	}
 
  ?>

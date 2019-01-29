@@ -1,4 +1,7 @@
-<? php include('4.Sign Up Validation.php'); ?>
+<? php 
+	include('4.Sign Up Validation.php');
+	
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +11,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="1.style.css">
+
 
 	<style>
 		body {
 			font-family: "Roboto", sans-serif;
 			background-size: cover;
 		}
+		.table {
+			margin-top: 100px;
+		}
 	</style>
-	<link rel="stylesheet" type="text/css" href="5.style.css">
+	
 </head>
 <body>
 	
@@ -33,10 +41,13 @@
 	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#"><i class="far fa-question-circle"></i> Quiz</a>
+	        <a class="nav-link" href="6.Word Dictionary.php"><i class="fas fa-book"></i> Thesaurus</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#"><i class="fas fa-language"></i> Google Translate</a>
+	        <a class="nav-link" href="7.Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
 	      </li>
 	    </ul>
 	    <ul class="navbar-nav ml-auto">
@@ -144,9 +155,20 @@
 		<?php endif; ?>
 		</div>	
 			
-			
+
 		
 	</form>
+	<form action="API.php" method="POST">
+			<div class="form-group">
+				<label>Enter the WORD: </label>
+				<input type="text" name="word" class="form-control">
+			</div>
+			<div class="form-group">
+				<button type="submit" name="search" class="btn btn-info">Search</button>
+			</div>
+				
+	</form>
+
 	</div>
 	</div>
 	</div>

@@ -20,7 +20,7 @@
 		<div class="col-sm-8 main-section">
 			<div class="modal-content">
 				<h1 id="h1">SIGN IN</h1>
-				<form action="3.Sign In Validation.php" method="POST">
+				<form method="POST">
 					<div class="form-group">
 					<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
 					<i class="fas fa-envelope"></i>
