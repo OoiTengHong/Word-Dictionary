@@ -28,7 +28,7 @@
 	        <a class="nav-link" href="Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="6.API.html"><i class="fas fa-language"></i> Google Translate</a>
+	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
 	      </li>
 	    </ul>
 	    <ul class="navbar-nav ml-auto">
