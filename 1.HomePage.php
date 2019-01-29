@@ -25,7 +25,7 @@
 	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
+	        <a class="nav-link" href="Quiz1.php"><i class="far fa-question-circle"></i> Quiz</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>

@@ -97,7 +97,7 @@
 	        <a class="nav-link" href="1.HomePage.php"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="Quiz.php"><i class="far fa-question-circle"></i> Quiz</a>
+	        <a class="nav-link" href="Quiz1.php"><i class="far fa-question-circle"></i> Quiz</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="6.Word Dictionary.php"><i class="fas fa-language"></i> Google Translate</a>
@@ -137,14 +137,14 @@
 		<div class="column2">
 			<div class="box"> <a href="QuizA.php"><img src="not-equal.png" style="width:200px;height:200px;" class="image image-full" /></a>
 				<h3>Antonyms</h3>
-				<p>A word opposite in meaning to another</p>
+				<p>A word that expresses a meaning opposed to the meaning of another word</p>
 				<a href="QuizA.php" class="button button-small">Click Me</a> </div>
 		</div>
 		<div class="column3">
 			<div class="box"> <a href="QuizS.php"><img src="equal.png" style="width:200px;height:200px;" class="image image-full" /></a>
 				<h3>Synonyms</h3>
-				<p>A word that means exactly or nearly the same as another word</p>
-				<a href="QiuzS.php" class="button button-small">Click Me</a> </div>
+				<p>A word or phrase that means exactly or nearly the same as another word or phrase</p>
+				<a href="QuizS.php" class="button button-small">Click Me</a> </div>
 		</div>
 	</div>
 </div>
