@@ -1,6 +1,8 @@
 <?php 
 
-	session_start();
+	if (session_status() == PHP_SESSION_NONE) {
+		session_start();
+	}
 
 	$mysqli = new mysqli('localhost', 'root', '', 'word') or die(mysqli_error($mysqli));
 

@@ -1,4 +1,8 @@
-<? php 
+<?php 
+
+	session_start();
+	
+
 	include('4.Sign Up Validation.php');
 	
  ?>
@@ -55,12 +59,12 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 	      </li>
 	      <li class="nav-item">
 
-	        <a class="nav-link" href="Translate.html"><i class="fas fa-language"></i> Google Translate</a>
+	        <a class="nav-link" href="Translate.php"><i class="fas fa-language"></i> Google Translate</a>
 	      </li>
 	    </ul>
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="2.Sign In.php"><i class="fas fa-user"></i> Sign In</a>
+	        <a class="nav-link" href="2.Sign In.php"><i class="fas fa-user"></i> <?php echo $_SESSION['email']; ?></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="4.Sign Up.php"><i class="fas fa-user-plus"></i> Sign Up</a>

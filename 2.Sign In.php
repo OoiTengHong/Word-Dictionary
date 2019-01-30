@@ -1,8 +1,16 @@
 <?php 
+	
+	
+	if (isset($_POST['email'])) {
+		$_SESSION['email'] = $_POST['email'];
+	}
+	
+	
 	include("3.Sign In Validation.php"); 
 	require_once "config.php";
 
 	$loginURL = $gClient->createAuthUrl();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

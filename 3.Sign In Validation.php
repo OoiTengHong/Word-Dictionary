@@ -11,7 +11,7 @@
 			$query = mysqli_query($conn, "SELECT * FROM login WHERE email = '$email' AND password = '$password'");
 			$rows = mysqli_num_rows($query);
 			if ($rows == 1) {
-				header("Location: 1.HomePage.php");
+				header("Location: 1.Login HomePage.php");
 			}
 			else
 			{
